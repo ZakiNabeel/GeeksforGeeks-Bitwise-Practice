@@ -1,0 +1,19 @@
+#include<iostream>
+#include<bitset>
+using namespace std;
+int main()
+{
+    int L,R,Result;
+    cout<<"Number 1 ="<<endl;cin>>L;
+    cout<<"Number 2 ="<<endl;cin>>R;
+    Result = R|L;
+    int M = abs(R-L);
+
+    for(int i=M;i>0;i--)
+    {
+        int A = 8-i;
+        Result = Result|A;
+    }
+    cout<<Result;
+    return 0;
+}
